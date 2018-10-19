@@ -1,4 +1,4 @@
-//TELA INICIAL DO USUÁRIO
+//TELA INICIAL
 #include <stdio.h>
 
 void main () {
@@ -22,9 +22,9 @@ do { //Verificação se número digitado é válido.
     PENSANDO EM CRIAR UM IF OU LAÇO, CASO O USUARIO QUEIRA MUDAR DE OPCAO
     */
     
-
+    //PENSANDO SE ESTE SWTICH FOR UMA FUNÇÃO, PODEMOS FAZER O USUÁRIO VOLTAR ATRÁS.
     switch (opcao){ //Abrindo o SWITCH
-
+        
         case 1:
             printf("teste1");
             //Entrar-la na função do ALUNO/TELA
