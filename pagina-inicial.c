@@ -1,13 +1,15 @@
 //TELA INICIAL
 #include <stdio.h>
 
-void main () {
-//Variaveis locais
-int opcao;
+//FUNÇOES 
+    //Função de escolha - Pagina inicial
+void escolhaOpcao() 
+{
 
+    //Variaveis locais
+    int opcao;
 
-
-    printf("Ola, por favor escolha uma das opcoes abaixo: \n\n");
+   printf("Ola, por favor escolha uma das opcoes abaixo: \n\n");
 do { //Verificação se número digitado é válido. 
     //Informação para o usuário
     printf("Para ALUNO          digite: 1 \n");
@@ -26,10 +28,11 @@ do { //Verificação se número digitado é válido.
     switch (opcao){ //Abrindo o SWITCH
         
         case 1:
-            printf("teste1");
+            printf("teste1 \n");
             //Entrar-la na função do ALUNO/TELA
             opcao = 0; //Opcao recebe 6 para sair do Looping While
-            break;
+            printf("vai retornar \n");
+            return; 
         case 2:
          printf("teste2");
             //Entrar-la na função do PROFESSOR/TELA
@@ -57,5 +60,20 @@ do { //Verificação se número digitado é válido.
 
 } while(opcao > 5); //Criar uma validacao melhor (Pensando ainda)
 
+}
+
+
+
+
+//VARIAVEIS GLOBAIS
+
+void main () {
+
+    escolhaOpcao();
+    printf("retornou");
+ 
+
     
 }
+
+
